@@ -1,0 +1,22 @@
+<cdk-virtual-scroll-viewport itemSize="20" class="example-viewport">
+  <table matSort>
+    <tr>
+      <th mat-sort-header="id">ID</th>
+      <th mat-sort-header="name">Name</th>
+      <th>Created</th>
+      <th>Updated</th>
+      <th mat-sort-header="net">Net</th>
+      <th mat-sort-header="gross">Gross</th>
+      <th mat-sort-header="total">Total</th>
+    </tr>
+    <tr *cdkVirtualFor="let item of data | async">
+      <td>{{item.id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.created | date}}</td>
+      <td>{{item.updated | date}}</td>
+      <td>{{item.net}}</td>
+      <td>{{item.gross}}</td>
+      <td>{{getCurrencyDisplay(item.total)}}</td>
+    </tr>
+  </table>
+</cdk-virtual-scroll-viewport>
