@@ -1,4 +1,10 @@
-# VirtualizedGrid
+# Angular Table Virtualized Scroll Demo
+
+This is a quick project to demonstrate the capabilities of [Material CDK's virtualized scroller](https://material.angular.io/cdk/scrolling/overview). On page load, we generate a million rows of random data and put them in a table. When scrolling through the content, pay attention to what's happening in the DOM:
+
+![Demo](./.images/scroll-demo.gif)
+
+## CLI Info
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
 
