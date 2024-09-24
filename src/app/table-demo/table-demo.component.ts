@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { MatSort } from '@angular/material/sort';
-import { MatTable } from '@angular/material/table';
+import { MatLegacyTable as MatTable } from '@angular/material/legacy-table';
 import { TableDemoDataSource, TableDemoItem } from './table-demo-datasource';
 
 @Component({
