@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
-import { MatSort } from '@angular/material/sort';
-import { MatLegacyTable as MatTable } from '@angular/material/legacy-table';
+import { MatTable } from '@angular/material/table';
 import { TableDemoDataSource, TableDemoItem } from './table-demo-datasource';
+import { MatSort } from '@angular/material/sort';
 
 @Component({
   selector: 'app-table-demo',
